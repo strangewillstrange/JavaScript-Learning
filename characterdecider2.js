@@ -4,7 +4,7 @@ if (name) {
 	alert("hello, " + name);
 }
 
-var role = prompt("Will you fight or cast?");
+const role = prompt("Will you fight or cast?");
 
 if (role == "fight") {
 	const fighter = prompt("What gives you strength? \nskill, \ngod, \nrage");
