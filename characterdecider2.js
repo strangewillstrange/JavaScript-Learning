@@ -1,13 +1,13 @@
-var name = prompt("what is your character Name?");
+const name = prompt("what is your character Name?");
 
-if (name != null) {
+if (name) {
 	alert("hello, " + name);
 }
 
 var role = prompt("Will you fight or cast?");
 
 if (role == "fight") {
-	fighter = prompt("What gives you strength? \nskill, \ngod, \nrage");
+	const fighter = prompt("What gives you strength? \nskill, \ngod, \nrage");
 	switch (fighter) {
 		case "skill":
 			alert(name + ", You should be a fighter.");
@@ -23,7 +23,7 @@ if (role == "fight") {
 			break;
 		} 
 	} else {
-		var caster = prompt("Where does your magic come from? \nspellbook, \ngod, \nmusic");
+		const caster = prompt("Where does your magic come from? \nspellbook, \ngod, \nmusic");
 		switch (caster) {
 			case "spellbook":
 				alert(name + ", You should be a Wizard.");
